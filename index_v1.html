@@ -10,7 +10,7 @@
 ═══════════════════════════════════════════════════ -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'none'; frame-ancestors *; form-action 'none'; base-uri 'self';">
 <meta name="referrer" content="no-referrer">
-<title>Prompt Builder for bCloud.ac Extensions — v1.0</title>
+<title>Prompt Builder for Manager.io Extensions — v1.0</title>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ═══════════════════════════════════════════════
@@ -1294,7 +1294,7 @@ pre::-webkit-scrollbar-track{background:transparent}
 <div class="topbar">
   <div class="logo-wrap">
     <div class="logo-icon">M</div>
-    <div class="logo">Prompt Builder <span>for bCloud.ac Extensions</span></div>
+    <div class="logo">Prompt Builder <span>for Manager.io Extensions</span></div>
   </div>
   <div class="topbar-divider"></div>
   <div class="topbar-meta">
@@ -1305,7 +1305,7 @@ pre::-webkit-scrollbar-track{background:transparent}
       <span>Secure</span>
     </span>
   </div>
-  <div class="conn-pill checking" id="conn-pill" title="Checking connection to bCloud.ac…">
+  <div class="conn-pill checking" id="conn-pill" title="Checking connection to Manager.io…">
     <span class="conn-dot"></span>
     <span id="conn-text">Checking…</span>
   </div>
@@ -1626,7 +1626,7 @@ pre::-webkit-scrollbar-track{background:transparent}
           placeholder="Your complete, copy-paste-ready AI prompt will appear here.
 
 It will contain:
-• Full bCloud.ac extension boilerplate
+• Full Manager.io extension boilerplate
 • postMessage helper code
 • Your endpoint schema + sample values
 • Exact AI instructions for your feature
@@ -1658,16 +1658,16 @@ Load an endpoint first, then click Generate."></textarea>
 <div class="guide-modal" id="guide-modal">
 
   <div class="guide-header">
-    <div class="guide-title">📖 How to Use — <span>Prompt Builder for bCloud.ac Extensions</span></div>
+    <div class="guide-title">📖 How to Use — <span>Prompt Builder for Manager.io Extensions</span></div>
     <button class="guide-close" onclick="closeGuide()">✕</button>
   </div>
 
   <div class="guide-body">
 
     <div class="guide-intro">
-      A <strong style="color:var(--green2)">free tool</strong> to help you <strong>explore any bCloud.ac api4 endpoint</strong> live inside bCloud, inspect its full data schema, then generate a <strong>complete AI prompt</strong> — paste it into Claude, ChatGPT, or Gemini to receive a working extension HTML file.<br><br>
+      A <strong style="color:var(--green2)">free tool</strong> to help you <strong>explore any Manager.io api4 endpoint</strong> live inside Manager, inspect its full data schema, then generate a <strong>complete AI prompt</strong> — paste it into Claude, ChatGPT, or Gemini to receive a working extension HTML file.<br><br>
       <strong style="color:var(--amber2)">⚠ Developer tool:</strong> Designed for developers or technically minded users familiar with APIs and JSON. Follow the steps below, top to bottom.<br><br>
-      <strong style="color:var(--accent2)">💼 Not a developer?</strong> We build custom bCloud.ac extensions for businesses. <a href="#" onclick="closeGuide();openHireModal();return false;" style="color:var(--amber2);text-decoration:underline;font-weight:600">Contact us for professional development →</a>
+      <strong style="color:var(--accent2)">💼 Not a developer?</strong> We build custom Manager.io extensions for businesses. <a href="#" onclick="closeGuide();openHireModal();return false;" style="color:var(--amber2);text-decoration:underline;font-weight:600">Contact us for professional development →</a>
     </div>
 
     <div class="guide-steps">
@@ -1680,7 +1680,7 @@ Load an endpoint first, then click Generate."></textarea>
             Click any quick-access button in the bar above (Lists, Reports, Meta), or type an endpoint name manually and press Enter.<br><br>
             Use <strong style="color:var(--accent2)">▶ Load</strong> for a quick first-page preview, or <strong style="color:var(--purple2)">⬇ Load All</strong> to fetch every record. Use Load All before building a prompt.
           </div>
-          <div class="step-tip">⚠ bCloud.ac returns max 50 records per API call. Load All follows every page automatically so you never miss fields.</div>
+          <div class="step-tip">⚠ Manager.io returns max 50 records per API call. Load All follows every page automatically so you never miss fields.</div>
           <div class="guide-pills">
             <span class="gp gp-blue">customer-batch</span>
             <span class="gp gp-blue">sales-invoice-batch</span>
@@ -1753,7 +1753,7 @@ Load an endpoint first, then click Generate."></textarea>
           <div class="step-title">Deploy on GitHub Pages (free hosting)</div>
           <div class="step-desc">
             Host your extension HTML on <strong style="color:var(--accent2)">GitHub Pages</strong> for a free, permanent public URL.<br><br>
-            <strong>①</strong> Create a public GitHub repo → <strong>②</strong> Upload your file as <code>index.html</code> → <strong>③</strong> Enable Pages under Settings → Pages → Deploy from branch → main → <strong>④</strong> Get your URL → <strong>⑤</strong> Paste into bCloud<code>Settings → Extensions</code>.
+            <strong>①</strong> Create a public GitHub repo → <strong>②</strong> Upload your file as <code>index.html</code> → <strong>③</strong> Enable Pages under Settings → Pages → Deploy from branch → main → <strong>④</strong> Get your URL → <strong>⑤</strong> Paste into Manager <code>Settings → Extensions</code>.
           </div>
           <div class="guide-pills">
             <span class="gp gp-blue">github.com — free</span>
@@ -1773,7 +1773,7 @@ Load an endpoint first, then click Generate."></textarea>
         <div><strong>📉 Output quality varies by model.</strong> <span style="color:var(--accent2)">Paid plans</span> (Claude Pro, ChatGPT Plus) consistently produce better, more complete code than free tiers.</div>
         <div><strong>🔁 Iteration is normal.</strong> Complex extensions often need 2–3 rounds of refinement. Paste the output back with follow-up instructions.</div>
         <div style="font-size:10px;color:var(--dim);border-top:1px solid var(--border);padding-top:7px;margin-top:2px">
-          Provided as-is. Use generated code at your own discretion. Keep a backup of your bCloud.ac data before installing custom extensions.
+          Provided as-is. Use generated code at your own discretion. Keep a backup of your Manager.io data before installing custom extensions.
         </div>
       </div>
     </div>
@@ -1781,7 +1781,7 @@ Load an endpoint first, then click Generate."></textarea>
   </div><!-- /guide-body -->
 
   <div class="guide-footer">
-    <span class="guide-footer-note">Prompt Builder for bCloud.ac Extensions · v1.0 · GET (Read-Only)</span>
+    <span class="guide-footer-note">Prompt Builder for Manager.io Extensions · v1.0 · GET (Read-Only)</span>
     <button class="btn-guide-close" onclick="closeGuide()">✓ Got it, close</button>
   </div>
 
@@ -1797,7 +1797,7 @@ Load an endpoint first, then click Generate."></textarea>
     <span class="hire-eyebrow">⚡ Professional Services</span>
     <div class="hire-title">Need a <span>Custom Extension</span> Built?</div>
     <div class="hire-subtitle">
-      This tool is <strong style="color:var(--green2)">100% free</strong> for self-service development. If you'd rather have an expert build a polished, production-ready bCloud.ac extension tailored to your business — we're here to help.
+      This tool is <strong style="color:var(--green2)">100% free</strong> for self-service development. If you'd rather have an expert build a polished, production-ready Manager.io extension tailored to your business — we're here to help.
     </div>
   </div>
 
@@ -1857,7 +1857,7 @@ Load an endpoint first, then click Generate."></textarea>
     <span class="sec-eyebrow">🔒 Security Layer</span>
     <div class="sec-title">Active Protections</div>
     <div class="sec-subtitle">
-      This tool runs with multiple defense layers to keep your bCloud.ac data safe. Every check is enforced at runtime.
+      This tool runs with multiple defense layers to keep your Manager.io data safe. Every check is enforced at runtime.
     </div>
   </div>
 
@@ -1882,7 +1882,7 @@ Load an endpoint first, then click Generate."></textarea>
       <div class="sec-check-body">
         <div class="sec-check-title">Read-only API access <span class="sec-check-status">GET only</span></div>
         <div class="sec-check-desc">
-          Only HTTP GET requests are ever made. No writes, no mutations — nothing you do here can change, create, or delete data in bCloud.ac.
+          Only HTTP GET requests are ever made. No writes, no mutations — nothing you do here can change, create, or delete data in Manager.io.
         </div>
       </div>
     </div>
@@ -1902,7 +1902,7 @@ Load an endpoint first, then click Generate."></textarea>
       <div class="sec-check-body">
         <div class="sec-check-title">Content Security Policy <span class="sec-check-status">Locked</span></div>
         <div class="sec-check-desc">
-          A strict CSP header blocks all external network calls, remote scripts, and unexpected resource loads. The page only talks to bCloud.ac through its sandboxed postMessage bridge.
+          A strict CSP header blocks all external network calls, remote scripts, and unexpected resource loads. The page only talks to Manager.io through its sandboxed postMessage bridge.
         </div>
       </div>
     </div>
@@ -1922,7 +1922,7 @@ Load an endpoint first, then click Generate."></textarea>
       <div class="sec-check-body">
         <div class="sec-check-title">Zero external tracking <span class="sec-check-status">No analytics</span></div>
         <div class="sec-check-desc">
-          No telemetry, no analytics, no cookies, no fingerprinting. Your data never leaves the bCloud.ac iframe boundary. The only outbound request is to Google Fonts (style only).
+          No telemetry, no analytics, no cookies, no fingerprinting. Your data never leaves the Manager.io iframe boundary. The only outbound request is to Google Fonts (style only).
         </div>
       </div>
     </div>
@@ -1991,18 +1991,18 @@ function execCopy(text){
    every piece of rendered data.
 ════════════════════════════════════════════════ */
 
-// Locked origin of the bCloud.ac host. Starts null and gets pinned on
+// Locked origin of the Manager.io host. Starts null and gets pinned on
 // the first successful response. After that, any message from a
 // different origin is silently dropped.
-let BCLOUD_ORIGIN = null;
+let MANAGER_ORIGIN = null;
 
 function updateOriginDisplay(){
   const block = document.getElementById('sec-origin-block');
   const val   = document.getElementById('sec-origin-value');
   if(!block || !val) return;
-  if(BCLOUD_ORIGIN){
+  if(MANAGER_ORIGIN){
     block.classList.remove('pending');
-    val.textContent = BCLOUD_ORIGIN;
+    val.textContent = MANAGER_ORIGIN;
   }
 }
 
@@ -2043,7 +2043,7 @@ function sanitizeEndpoint(raw){
 
 /* ════════════════════════════════════════════════
    postMessage — DO NOT MODIFY THE CONTRACT
-   This is the ONLY way to call the bCloud.ac API
+   This is the ONLY way to call the Manager.io API
    from inside an extension iframe.
    Hardened with origin pinning + source check.
 ════════════════════════════════════════════════ */
@@ -2052,20 +2052,20 @@ function pmr(msg){
     const rid   = crypto.randomUUID();
     const timer = setTimeout(()=>{
       window.removeEventListener('message', h);
-      reject(new Error('15 s timeout — is this running inside bCloud.ac?'));
+      reject(new Error('15 s timeout — is this running inside Manager.io?'));
     }, 15000);
     function h(e){
-      // SECURITY: origin pinning — once we've talked to bCloud.ac once,
+      // SECURITY: origin pinning — once we've talked to Manager.io once,
       // reject messages from any other origin.
-      if(BCLOUD_ORIGIN && e.origin !== BCLOUD_ORIGIN) return;
-      // SECURITY: source must be the parent window (the bCloud.ac host).
+      if(MANAGER_ORIGIN && e.origin !== MANAGER_ORIGIN) return;
+      // SECURITY: source must be the parent window (the Manager.io host).
       if(e.source !== window.parent) return;
       if(e.data?.type?.endsWith('-response') && e.data?.requestId === rid){
         clearTimeout(timer);
         window.removeEventListener('message', h);
         // Pin the origin on first successful response.
-        if(!BCLOUD_ORIGIN && e.origin){
-          BCLOUD_ORIGIN = e.origin;
+        if(!MANAGER_ORIGIN && e.origin){
+          MANAGER_ORIGIN = e.origin;
           updateOriginDisplay();
         }
         resolve(e.data.body);
@@ -2077,9 +2077,9 @@ function pmr(msg){
 }
 
 /* ════════════════════════════════════════════════
-   bCloud.ac CONNECTION CHECK
+   MANAGER.IO CONNECTION CHECK
    Pings the host on load to confirm we're running
-   inside a bCloud.ac iframe (not a standalone tab).
+   inside a Manager.io iframe (not a standalone tab).
 ════════════════════════════════════════════════ */
 function setConnectionState(state, text, tooltip){
   const pill = document.getElementById('conn-pill');
@@ -2090,18 +2090,18 @@ function setConnectionState(state, text, tooltip){
   if(tooltip) pill.title = tooltip;
 }
 
-async function checkBcloudConnection(){
-  // If not embedded in any frame, we clearly aren't inside bCloud.
+async function checkManagerConnection(){
+  // If not embedded in any frame, we clearly aren't inside Manager.
   if(window.parent === window || window.top === window){
     setConnectionState(
       'disconnected',
       'Standalone Mode',
-      'Open this page inside bCloud.ac → Settings → Extensions to connect to live business data.'
+      'Open this page inside Manager.io → Settings → Extensions to connect to live business data.'
     );
     return;
   }
 
-  // Probe the host with a cheap request. If bCloud.ac responds, we're in.
+  // Probe the host with a cheap request. If Manager.io responds, we're in.
   try{
     const probe = new Promise((resolve, reject)=>{
       const rid = crypto.randomUUID();
@@ -2111,13 +2111,13 @@ async function checkBcloudConnection(){
       }, 3500);
       function h(e){
         // Same security checks as pmr()
-        if(BCLOUD_ORIGIN && e.origin !== BCLOUD_ORIGIN) return;
+        if(MANAGER_ORIGIN && e.origin !== MANAGER_ORIGIN) return;
         if(e.source !== window.parent) return;
         if(e.data?.type?.endsWith('-response') && e.data?.requestId === rid){
           clearTimeout(timer);
           window.removeEventListener('message', h);
-          if(!BCLOUD_ORIGIN && e.origin){
-            BCLOUD_ORIGIN = e.origin;
+          if(!MANAGER_ORIGIN && e.origin){
+            MANAGER_ORIGIN = e.origin;
             updateOriginDisplay();
           }
           resolve(e.data.body);
@@ -2134,20 +2134,20 @@ async function checkBcloudConnection(){
     await probe;
     setConnectionState(
       'connected',
-      'Connected to bCloud.ac',
+      'Connected to Manager.io',
       'Live API access confirmed — you can load endpoints below.'
     );
   }catch(e){
     setConnectionState(
       'disconnected',
       'Not Connected',
-      'Running inside an iframe, but bCloud.ac did not respond. Ensure the extension is installed correctly.'
+      'Running inside an iframe, but Manager.io did not respond. Ensure the extension is installed correctly.'
     );
   }
 }
 
 /* Run the connection check shortly after load so the host has time to initialise */
-setTimeout(checkBcloudConnection, 600);
+setTimeout(checkManagerConnection, 600);
 
 /* ════════════════════════════════════════════════
    HIRE-US MODAL
@@ -2398,10 +2398,10 @@ function processData(data, elapsed, endpoint){
   latestJson = data;
   const items = getItems(data);
 
-  // A successful response is definitive proof we're talking to bCloud.ac
+  // A successful response is definitive proof we're talking to Manager.io
   const pill = document.getElementById('conn-pill');
   if(pill && !pill.classList.contains('connected')){
-    setConnectionState('connected', 'Connected to bCloud.ac',
+    setConnectionState('connected', 'Connected to Manager.io',
       'Live API access confirmed — you can load endpoints below.');
   }
 
@@ -2478,14 +2478,14 @@ async function loadData(){
     setStat('s-status', 'Error', 'sv-err');
     document.getElementById('output').textContent =
       '⚠ Error: ' + e.message +
-      '\n\nEnsure this is running inside bCloud.ac as an extension.\n' +
+      '\n\nEnsure this is running inside Manager.io as an extension.\n' +
       'For single-record endpoints, include ?Key=<uuid> in the path.';
   }
 }
 
 /* ════════════════════════════════════════════════
    LOAD ALL — paginated fetch loop
-   bCloud.ac returns ≤50 records per call.
+   Manager.io returns ≤50 records per call.
    This loop follows next_page_token until all
    records are loaded. DO NOT simplify.
 ════════════════════════════════════════════════ */
@@ -2910,7 +2910,7 @@ function generatePrompt(){
 <div class="ctrl-bar">
   <button class="load-btn" id="load-btn" onclick="loadAllRecords()">⬇ Load All Records</button>
   <div class="prog-wrap"><div class="prog-bar" id="prog-bar"></div></div>
-  <span class="status-txt" id="status-txt">Press Load to fetch data from bCloud</span>
+  <span class="status-txt" id="status-txt">Press Load to fetch data from Manager</span>
 </div>
 
 <!-- ??? Add your HTML structure here -->
@@ -2925,7 +2925,7 @@ function postMessageWithResponse(message) {
     const requestId = crypto.randomUUID();
     const timer = setTimeout(() => {
       window.removeEventListener('message', handler);
-      reject(new Error('Timeout — is this running inside bCloud.ac?'));
+      reject(new Error('Timeout — is this running inside Manager.io?'));
     }, 15000);
     function handler(event) {
       if (event.data?.type?.endsWith('-response') && event.data?.requestId === requestId) {
@@ -2942,7 +2942,7 @@ function postMessageWithResponse(message) {
 /* ══════════════════════════════════
    ${fnName}
    Fetches ALL pages — DO NOT SIMPLIFY.
-   bCloud.ac returns ≤50 records per call.
+   Manager.io returns ≤50 records per call.
    This loop follows next_page_token until
    every record is loaded.
 ══════════════════════════════════ */
@@ -3009,7 +3009,7 @@ async function loadAllRecords() {
     status.textContent = '⚠ ' + err.message;
     btn.textContent = '↺ Retry';
     btn.disabled = false;
-    app.innerHTML = \`<div class="err-box">⚠ \${err.message}<br><small>Make sure this is running inside bCloud.ac</small></div>\`;
+    app.innerHTML = \`<div class="err-box">⚠ \${err.message}<br><small>Make sure this is running inside Manager.io</small></div>\`;
   }
 }
 
@@ -3052,21 +3052,21 @@ ${primaryPaths.slice(0,6).map(({ path })=>{
   // ── Assemble full prompt ──
   let out = '';
   out += `╔══════════════════════════════════════════════════════════════╗\n`;
-  out += `║   bCloud.ac EXTENSION — COMPLETE BUILD PROMPT              ║\n`;
+  out += `║   MANAGER.IO EXTENSION — COMPLETE BUILD PROMPT              ║\n`;
   out += `╚══════════════════════════════════════════════════════════════╝\n\n`;
 
   out += `TASK\n${'─'.repeat(60)}\n`;
-  out += `Build a complete, working bCloud.ac browser extension.\n`;
+  out += `Build a complete, working Manager.io browser extension.\n`;
   out += `Goal:           ${goal}\n`;
   out += `Visual style:   ${selectedStyle}\n`;
   out += `Primary endpoint: GET /api4/${currentEndpoint}\n`;
   if(eps.length > 1) out += `Additional:     ${eps.slice(1).map(e=>'/api4/'+e.name).join(', ')}\n`;
   out += `\n`;
 
-  out += `bCloud.ac EXTENSION RULES\n${'─'.repeat(60)}\n`;
+  out += `MANAGER.IO EXTENSION RULES\n${'─'.repeat(60)}\n`;
   out += `1. An extension is a SINGLE self-contained HTML file.\n`;
-  out += `2. It is loaded inside an <iframe> by bCloud.ac.\n`;
-  out += `3. The ONLY way to call the bCloudAPI is postMessageWithResponse().\n`;
+  out += `2. It is loaded inside an <iframe> by Manager.io.\n`;
+  out += `3. The ONLY way to call the Manager API is postMessageWithResponse().\n`;
   out += `   The exact implementation is in the skeleton below — copy it verbatim.\n`;
   out += `4. /api4/ENDPOINT is automatically scoped to the current business.\n`;
   out += `5. No backend, no npm, no build step — pure HTML/CSS/JS.\n`;
@@ -3109,7 +3109,7 @@ ${primaryPaths.slice(0,6).map(({ path })=>{
   out += `• postMessageWithResponse() copied exactly from the skeleton.\n`;
   out += `• CDN libs via <script src> are allowed.\n\n`;
   out += `PAGINATION — DO NOT SIMPLIFY\n`;
-  out += `• bCloud.ac returns at most 50 records per request.\n`;
+  out += `• Manager.io returns at most 50 records per request.\n`;
   out += `• Keep the full pagination loop — it follows next_page_token.\n`;
   out += `• Never replace it with a single fetch call.\n\n`;
   out += `IMPLEMENTATION\n`;
